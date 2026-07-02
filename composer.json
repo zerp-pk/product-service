@@ -1,6 +1,6 @@
 {
     "name": "zerp/product-service",
-    "description": "Description for product-service package",
+    "description": "Product and service catalog module for the Zerp ERP platform",
     "type": "library",
     "license": "MIT",
     "require": {},

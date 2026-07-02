@@ -13,7 +13,7 @@ use Zerp\ProductService\Listeners\ApprovePurchaseReturnListener;
 use Zerp\ProductService\Listeners\CompleteSalesReturnListener;
 use Zerp\ProductService\Listeners\PosCreateListener;
 use Zerp\ProductService\Listeners\PostSalesInvoiceListener;
-use Workdo\Retainer\Events\ConvertSalesRetainer;
+use Zerp\Retainer\Events\ConvertSalesRetainer;
 
 class EventServiceProvider extends ServiceProvider
 {
