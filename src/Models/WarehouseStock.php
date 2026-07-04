@@ -21,4 +21,15 @@ class WarehouseStock extends Model
     {
         return $this->belongsTo(\App\Models\Warehouse::class, 'warehouse_id');
     }
+
+    public static function available(int $productId, ?int $warehouseId): float
+    {
+        if (!$warehouseId) {
+            return 0;
+        }
+
+        return (float) (static::where('product_id', $productId)
+            ->where('warehouse_id', $warehouseId)
+            ->value('quantity') ?? 0);
+    }
 }
