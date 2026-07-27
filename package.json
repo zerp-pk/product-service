@@ -1,0 +1,14 @@
+{
+  "name": "@zerp/product-service",
+  "version": "5.0.0",
+  "description": "Product and service catalog module for the Zerp ERP platform",
+  "license": "MIT",
+  "private": true,
+  "peerDependencies": {
+    "@inertiajs/react": "^1.0.0",
+    "axios": "^1.6.4",
+    "lucide-react": "^0.378.0",
+    "react": "^18.2.0",
+    "react-i18next": "^15.6.1"
+  }
+}
