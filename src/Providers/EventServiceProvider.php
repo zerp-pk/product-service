@@ -11,6 +11,7 @@ use Zerp\Pos\Events\CreatePos;
 use Zerp\ProductService\Listeners\PostPurchaseInvoiceListener;
 use Zerp\ProductService\Listeners\ApprovePurchaseReturnListener;
 use Zerp\ProductService\Listeners\CompleteSalesReturnListener;
+use Zerp\ProductService\Listeners\ConvertSalesRetainerListener;
 use Zerp\ProductService\Listeners\PosCreateListener;
 use Zerp\ProductService\Listeners\PostSalesInvoiceListener;
 use Zerp\Retainer\Events\ConvertSalesRetainer;
@@ -34,7 +35,7 @@ class EventServiceProvider extends ServiceProvider
             PosCreateListener::class,
         ],
         ConvertSalesRetainer::class => [
-            CompleteSalesReturnListener::class,
+            ConvertSalesRetainerListener::class,
         ],
     ];
 }
